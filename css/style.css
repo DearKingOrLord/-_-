@@ -249,3 +249,30 @@ footer{text-align:center;padding:26px 20px 34px;color:var(--soft);border-top:1px
 .toggle-btn {
   transition: all 0.3s ease;
 }
+
+.author-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-photo img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #00cfff;
+}
+
+
+@media (max-width: 768px) {
+  .author-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+}
