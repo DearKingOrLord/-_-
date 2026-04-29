@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тесты по HTML</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container topbar">
+    <div class="brand">
+      <img src="assets/images/site_logo.svg" alt="HTML logo">
+      <div class="brand-text">
+        <h1>Электронный учебник по HTML</h1>
+        <p>Современная версия учебного сайта по HTML и основам веб-разработки: лекции, практика, реальные тесты и видеоматериалы.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="lessons.html">Лекции</a>
+      <a href="work.html">Практика</a>
+      <a href="test.html">Тесты</a>
+      <a href="presentation.html">Материалы</a>
+      <a href="video.html">Видео</a>
+      <a href="author.html">Дополнительная информация</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="section">
+      <h2 class="section-title">Тесты по HTML</h2>
+      <p class="section-subtitle">Выберите тест и пройдите его прямо на сайте.</p>
+
+      <div class="test-list">
+
+        <!-- Тест 1 -->
+        <div class="test-card">
+          <h3>Тест 1. Основы HTML</h3>
+          <p>Базовые понятия HTML.</p>
+          <button type="button" class="btn btn-primary toggle-btn" onclick="toggleTest('test1', this)">Открыть тест</button>
+
+          <div id="test1" class="test-content">
+            <form>
+              <div class="question">
+                <h4>1. Что означает HTML?</h4>
+                <label><input type="radio" name="test1_q1" value="a"> Hyper Text Markup Language</label>
+                <label><input type="radio" name="test1_q1" value="b"> High Text Machine Language</label>
+                <label><input type="radio" name="test1_q1" value="c"> Hyper Tool Multi Language</label>
+              </div>
+
+              <div class="question">
+                <h4>2. HTML — это...</h4>
+                <label><input type="radio" name="test1_q2" value="a"> язык программирования</label>
+                <label><input type="radio" name="test1_q2" value="b"> язык разметки</label>
+                <label><input type="radio" name="test1_q2" value="c"> графический редактор</label>
+              </div>
+
+              <div class="question">
+                <h4>3. С чего обычно начинается HTML-документ?</h4>
+                <label><input type="radio" name="test1_q3" value="a"> &lt;body&gt;</label>
+                <label><input type="radio" name="test1_q3" value="b"> &lt;!DOCTYPE html&gt;</label>
+                <label><input type="radio" name="test1_q3" value="c"> &lt;title&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>4. Какой тег является корневым элементом страницы?</h4>
+                <label><input type="radio" name="test1_q4" value="a"> &lt;html&gt;</label>
+                <label><input type="radio" name="test1_q4" value="b"> &lt;head&gt;</label>
+                <label><input type="radio" name="test1_q4" value="c"> &lt;main&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>5. Где обычно находится заголовок страницы?</h4>
+                <label><input type="radio" name="test1_q5" value="a"> в &lt;footer&gt;</label>
+                <label><input type="radio" name="test1_q5" value="b"> в &lt;title&gt;</label>
+                <label><input type="radio" name="test1_q5" value="c"> в &lt;nav&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>6. Какой тег содержит видимую часть страницы?</h4>
+                <label><input type="radio" name="test1_q6" value="a"> &lt;head&gt;</label>
+                <label><input type="radio" name="test1_q6" value="b"> &lt;meta&gt;</label>
+                <label><input type="radio" name="test1_q6" value="c"> &lt;body&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>7. HTML-файлы обычно имеют расширение...</h4>
+                <label><input type="radio" name="test1_q7" value="a"> .html</label>
+                <label><input type="radio" name="test1_q7" value="b"> .docx</label>
+                <label><input type="radio" name="test1_q7" value="c"> .png</label>
+              </div>
+
+              <div class="question">
+                <h4>8. Для чего нужен тег &lt;head&gt;?</h4>
+                <label><input type="radio" name="test1_q8" value="a"> для ссылок на стили, метаданных и названия страницы</label>
+                <label><input type="radio" name="test1_q8" value="b"> для вывода картинок</label>
+                <label><input type="radio" name="test1_q8" value="c"> только для таблиц</label>
+              </div>
+
+              <div class="question">
+                <h4>9. Что делает браузер с HTML-кодом?</h4>
+                <label><input type="radio" name="test1_q9" value="a"> переводит его в музыку</label>
+                <label><input type="radio" name="test1_q9" value="b"> отображает страницу</label>
+                <label><input type="radio" name="test1_q9" value="c"> удаляет теги</label>
+              </div>
+
+              <div class="question">
+                <h4>10. HTML нужен в первую очередь для...</h4>
+                <label><input type="radio" name="test1_q10" value="a"> структуры страницы</label>
+                <label><input type="radio" name="test1_q10" value="b"> работы с базой данных</label>
+                <label><input type="radio" name="test1_q10" value="c"> монтажа видео</label>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="button" class="btn btn-primary" onclick="checkTest1()">Проверить результат</button>
+                <button type="reset" class="btn btn-secondary" onclick="resetTest('result1')">Сбросить</button>
+              </div>
+            </form>
+            <div id="result1" class="result-box" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Тест 2 -->
+        <div class="test-card">
+          <h3>Тест 2. Теги и атрибуты</h3>
+          <p>Основной синтаксис HTML.</p>
+          <button type="button" class="btn btn-primary toggle-btn" onclick="toggleTest('test2', this)">Открыть тест</button>
+
+          <div id="test2" class="test-content">
+            <form>
+              <div class="question">
+                <h4>1. Что такое тег в HTML?</h4>
+                <label><input type="radio" name="test2_q1" value="a"> команда разметки</label>
+                <label><input type="radio" name="test2_q1" value="b"> папка на компьютере</label>
+                <label><input type="radio" name="test2_q1" value="c"> браузер</label>
+              </div>
+
+              <div class="question">
+                <h4>2. Как правильно записывается тег абзаца?</h4>
+                <label><input type="radio" name="test2_q2" value="a"> &lt;paragraph&gt;</label>
+                <label><input type="radio" name="test2_q2" value="b"> &lt;p&gt;</label>
+                <label><input type="radio" name="test2_q2" value="c"> &lt;txt&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>3. Атрибут — это...</h4>
+                <label><input type="radio" name="test2_q3" value="a"> дополнительная настройка тега</label>
+                <label><input type="radio" name="test2_q3" value="b"> картинка</label>
+                <label><input type="radio" name="test2_q3" value="c"> отдельная страница</label>
+              </div>
+
+              <div class="question">
+                <h4>4. Где пишутся атрибуты?</h4>
+                <label><input type="radio" name="test2_q4" value="a"> внутри открывающего тега</label>
+                <label><input type="radio" name="test2_q4" value="b"> после закрывающего тега</label>
+                <label><input type="radio" name="test2_q4" value="c"> в CSS-файле</label>
+              </div>
+
+              <div class="question">
+                <h4>5. Что значит вложенность тегов?</h4>
+                <label><input type="radio" name="test2_q5" value="a"> тег находится внутри другого тега</label>
+                <label><input type="radio" name="test2_q5" value="b"> тег удалён</label>
+                <label><input type="radio" name="test2_q5" value="c"> тег не работает</label>
+              </div>
+
+              <div class="question">
+                <h4>6. Какой вариант написан правильно?</h4>
+                <label><input type="radio" name="test2_q6" value="a"> &lt;p&gt;Текст&lt;/p&gt;</label>
+                <label><input type="radio" name="test2_q6" value="b"> &lt;p&gt;Текст&lt;p&gt;</label>
+                <label><input type="radio" name="test2_q6" value="c"> p&lt;/p&gt;Текст</label>
+              </div>
+
+              <div class="question">
+                <h4>7. Какой атрибут задаёт подсказку для изображения?</h4>
+                <label><input type="radio" name="test2_q7" value="a"> alt</label>
+                <label><input type="radio" name="test2_q7" value="b"> href</label>
+                <label><input type="radio" name="test2_q7" value="c"> class</label>
+              </div>
+
+              <div class="question">
+                <h4>8. Какой атрибут часто используют для CSS-стилей?</h4>
+                <label><input type="radio" name="test2_q8" value="a"> class</label>
+                <label><input type="radio" name="test2_q8" value="b"> src</label>
+                <label><input type="radio" name="test2_q8" value="c"> widthx</label>
+              </div>
+
+              <div class="question">
+                <h4>9. Какой атрибут задаёт уникальное имя элементу?</h4>
+                <label><input type="radio" name="test2_q9" value="a"> id</label>
+                <label><input type="radio" name="test2_q9" value="b"> img</label>
+                <label><input type="radio" name="test2_q9" value="c"> file</label>
+              </div>
+
+              <div class="question">
+                <h4>10. Что важнее в HTML?</h4>
+                <label><input type="radio" name="test2_q10" value="a"> правильное открытие и закрытие тегов</label>
+                <label><input type="radio" name="test2_q10" value="b"> цвет монитора</label>
+                <label><input type="radio" name="test2_q10" value="c"> громкость браузера</label>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="button" class="btn btn-primary" onclick="checkTest2()">Проверить результат</button>
+                <button type="reset" class="btn btn-secondary" onclick="resetTest('result2')">Сбросить</button>
+              </div>
+            </form>
+            <div id="result2" class="result-box" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Тест 3 -->
+        <div class="test-card">
+          <h3>Тест 3. Текст, заголовки и списки</h3>
+          <p>Текстовые элементы HTML.</p>
+          <button type="button" class="btn btn-primary toggle-btn" onclick="toggleTest('test3', this)">Открыть тест</button>
+
+          <div id="test3" class="test-content">
+            <form>
+              <div class="question">
+                <h4>1. Какой тег используется для самого крупного заголовка?</h4>
+                <label><input type="radio" name="test3_q1" value="a"> &lt;h1&gt;</label>
+                <label><input type="radio" name="test3_q1" value="b"> &lt;h6&gt;</label>
+                <label><input type="radio" name="test3_q1" value="c"> &lt;head&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>2. Какой тег используется для абзаца?</h4>
+                <label><input type="radio" name="test3_q2" value="a"> &lt;p&gt;</label>
+                <label><input type="radio" name="test3_q2" value="b"> &lt;h2&gt;</label>
+                <label><input type="radio" name="test3_q2" value="c"> &lt;divv&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>3. Какой тег создаёт маркированный список?</h4>
+                <label><input type="radio" name="test3_q3" value="a"> &lt;ol&gt;</label>
+                <label><input type="radio" name="test3_q3" value="b"> &lt;ul&gt;</label>
+                <label><input type="radio" name="test3_q3" value="c"> &lt;lii&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>4. Какой тег создаёт нумерованный список?</h4>
+                <label><input type="radio" name="test3_q4" value="a"> &lt;ol&gt;</label>
+                <label><input type="radio" name="test3_q4" value="b"> &lt;ul&gt;</label>
+                <label><input type="radio" name="test3_q4" value="c"> &lt;dl&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>5. Какой тег используется для элемента списка?</h4>
+                <label><input type="radio" name="test3_q5" value="a"> &lt;li&gt;</label>
+                <label><input type="radio" name="test3_q5" value="b"> &lt;list&gt;</label>
+                <label><input type="radio" name="test3_q5" value="c"> &lt;item&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>6. Какой заголовок самый маленький?</h4>
+                <label><input type="radio" name="test3_q6" value="a"> &lt;h1&gt;</label>
+                <label><input type="radio" name="test3_q6" value="b"> &lt;h6&gt;</label>
+                <label><input type="radio" name="test3_q6" value="c"> &lt;h0&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>7. Для чего нужны семантические теги?</h4>
+                <label><input type="radio" name="test3_q7" value="a"> для понятной структуры страницы</label>
+                <label><input type="radio" name="test3_q7" value="b"> только для музыки</label>
+                <label><input type="radio" name="test3_q7" value="c"> чтобы удалить текст</label>
+              </div>
+
+              <div class="question">
+                <h4>8. Какой тег может обозначать шапку сайта?</h4>
+                <label><input type="radio" name="test3_q8" value="a"> &lt;header&gt;</label>
+                <label><input type="radio" name="test3_q8" value="b"> &lt;span&gt;</label>
+                <label><input type="radio" name="test3_q8" value="c"> &lt;img&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>9. Какой тег может обозначать подвал сайта?</h4>
+                <label><input type="radio" name="test3_q9" value="a"> &lt;footer&gt;</label>
+                <label><input type="radio" name="test3_q9" value="b"> &lt;audio&gt;</label>
+                <label><input type="radio" name="test3_q9" value="c"> &lt;asidee&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>10. Какой тег часто используют как универсальный контейнер?</h4>
+                <label><input type="radio" name="test3_q10" value="a"> &lt;div&gt;</label>
+                <label><input type="radio" name="test3_q10" value="b"> &lt;mark&gt;</label>
+                <label><input type="radio" name="test3_q10" value="c"> &lt;br&gt;</label>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="button" class="btn btn-primary" onclick="checkTest3()">Проверить результат</button>
+                <button type="reset" class="btn btn-secondary" onclick="resetTest('result3')">Сбросить</button>
+              </div>
+            </form>
+            <div id="result3" class="result-box" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Тест 4 -->
+        <div class="test-card">
+          <h3>Тест 4. Ссылки и изображения</h3>
+          <p>Работа со ссылками и картинками.</p>
+          <button type="button" class="btn btn-primary toggle-btn" onclick="toggleTest('test4', this)">Открыть тест</button>
+
+          <div id="test4" class="test-content">
+            <form>
+              <div class="question">
+                <h4>1. Какой тег создаёт ссылку?</h4>
+                <label><input type="radio" name="test4_q1" value="a"> &lt;a&gt;</label>
+                <label><input type="radio" name="test4_q1" value="b"> &lt;img&gt;</label>
+                <label><input type="radio" name="test4_q1" value="c"> &lt;linkk&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>2. Какой атрибут указывает адрес ссылки?</h4>
+                <label><input type="radio" name="test4_q2" value="a"> src</label>
+                <label><input type="radio" name="test4_q2" value="b"> href</label>
+                <label><input type="radio" name="test4_q2" value="c"> alt</label>
+              </div>
+
+              <div class="question">
+                <h4>3. Какой тег вставляет изображение?</h4>
+                <label><input type="radio" name="test4_q3" value="a"> &lt;img&gt;</label>
+                <label><input type="radio" name="test4_q3" value="b"> &lt;picturelink&gt;</label>
+                <label><input type="radio" name="test4_q3" value="c"> &lt;href&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>4. Какой атрибут задаёт путь к изображению?</h4>
+                <label><input type="radio" name="test4_q4" value="a"> src</label>
+                <label><input type="radio" name="test4_q4" value="b"> alt</label>
+                <label><input type="radio" name="test4_q4" value="c"> titlex</label>
+              </div>
+
+              <div class="question">
+                <h4>5. Для чего нужен атрибут alt?</h4>
+                <label><input type="radio" name="test4_q5" value="a"> описание изображения</label>
+                <label><input type="radio" name="test4_q5" value="b"> цвет фона</label>
+                <label><input type="radio" name="test4_q5" value="c"> размер шрифта</label>
+              </div>
+
+              <div class="question">
+                <h4>6. Как открыть ссылку в новой вкладке?</h4>
+                <label><input type="radio" name="test4_q6" value="a"> target="_blank"</label>
+                <label><input type="radio" name="test4_q6" value="b"> src="_new"</label>
+                <label><input type="radio" name="test4_q6" value="c"> open="tab"</label>
+              </div>
+
+              <div class="question">
+                <h4>7. Что можно вставить внутрь тега &lt;a&gt;?</h4>
+                <label><input type="radio" name="test4_q7" value="a"> текст</label>
+                <label><input type="radio" name="test4_q7" value="b"> изображение</label>
+                <label><input type="radio" name="test4_q7" value="c"> и текст, и изображение</label>
+              </div>
+
+              <div class="question">
+                <h4>8. Какой путь означает файл в той же папке?</h4>
+                <label><input type="radio" name="test4_q8" value="a"> image.jpg</label>
+                <label><input type="radio" name="test4_q8" value="b"> C:\\disk\\image.jpg</label>
+                <label><input type="radio" name="test4_q8" value="c"> nowhere</label>
+              </div>
+
+              <div class="question">
+                <h4>9. Что будет, если картинка не загрузится?</h4>
+                <label><input type="radio" name="test4_q9" value="a"> может показаться текст alt</label>
+                <label><input type="radio" name="test4_q9" value="b"> сломается весь сайт</label>
+                <label><input type="radio" name="test4_q9" value="c"> исчезнет CSS</label>
+              </div>
+
+              <div class="question">
+                <h4>10. Для чего нужны ссылки в HTML?</h4>
+                <label><input type="radio" name="test4_q10" value="a"> переход между страницами и ресурсами</label>
+                <label><input type="radio" name="test4_q10" value="b"> только для изменения цвета</label>
+                <label><input type="radio" name="test4_q10" value="c"> только для звука</label>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="button" class="btn btn-primary" onclick="checkTest4()">Проверить результат</button>
+                <button type="reset" class="btn btn-secondary" onclick="resetTest('result4')">Сбросить</button>
+              </div>
+            </form>
+            <div id="result4" class="result-box" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Тест 5 -->
+        <div class="test-card">
+          <h3>Тест 5. Таблицы</h3>
+          <p>Таблицы в HTML.</p>
+          <button type="button" class="btn btn-primary toggle-btn" onclick="toggleTest('test5', this)">Открыть тест</button>
+
+          <div id="test5" class="test-content">
+            <form>
+              <div class="question">
+                <h4>1. Какой тег создаёт таблицу?</h4>
+                <label><input type="radio" name="test5_q1" value="a"> &lt;table&gt;</label>
+                <label><input type="radio" name="test5_q1" value="b"> &lt;tb&gt;</label>
+                <label><input type="radio" name="test5_q1" value="c"> &lt;tbl&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>2. Какой тег создаёт строку таблицы?</h4>
+                <label><input type="radio" name="test5_q2" value="a"> &lt;tr&gt;</label>
+                <label><input type="radio" name="test5_q2" value="b"> &lt;td&gt;</label>
+                <label><input type="radio" name="test5_q2" value="c"> &lt;thh&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>3. Какой тег создаёт обычную ячейку?</h4>
+                <label><input type="radio" name="test5_q3" value="a"> &lt;td&gt;</label>
+                <label><input type="radio" name="test5_q3" value="b"> &lt;tr&gt;</label>
+                <label><input type="radio" name="test5_q3" value="c"> &lt;cell&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>4. Какой тег создаёт ячейку-заголовок?</h4>
+                <label><input type="radio" name="test5_q4" value="a"> &lt;th&gt;</label>
+                <label><input type="radio" name="test5_q4" value="b"> &lt;td&gt;</label>
+                <label><input type="radio" name="test5_q4" value="c"> &lt;headcell&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>5. Что должно быть внутри &lt;table&gt;?</h4>
+                <label><input type="radio" name="test5_q5" value="a"> строки и ячейки</label>
+                <label><input type="radio" name="test5_q5" value="b"> только картинки</label>
+                <label><input type="radio" name="test5_q5" value="c"> только CSS</label>
+              </div>
+
+              <div class="question">
+                <h4>6. Что делает атрибут border в старых примерах?</h4>
+                <label><input type="radio" name="test5_q6" value="a"> задаёт границу таблицы</label>
+                <label><input type="radio" name="test5_q6" value="b"> удаляет текст</label>
+                <label><input type="radio" name="test5_q6" value="c"> делает музыку</label>
+              </div>
+
+              <div class="question">
+                <h4>7. Можно ли делать несколько строк в таблице?</h4>
+                <label><input type="radio" name="test5_q7" value="a"> да</label>
+                <label><input type="radio" name="test5_q7" value="b"> нет</label>
+                <label><input type="radio" name="test5_q7" value="c"> только одну</label>
+              </div>
+
+              <div class="question">
+                <h4>8. Для чего используют таблицы в HTML?</h4>
+                <label><input type="radio" name="test5_q8" value="a"> для вывода данных в строках и столбцах</label>
+                <label><input type="radio" name="test5_q8" value="b"> только для видео</label>
+                <label><input type="radio" name="test5_q8" value="c"> только для фона</label>
+              </div>
+
+              <div class="question">
+                <h4>9. Что такое столбец таблицы?</h4>
+                <label><input type="radio" name="test5_q9" value="a"> вертикальная часть таблицы</label>
+                <label><input type="radio" name="test5_q9" value="b"> горизонтальная часть таблицы</label>
+                <label><input type="radio" name="test5_q9" value="c"> картинка</label>
+              </div>
+
+              <div class="question">
+                <h4>10. Что такое строка таблицы?</h4>
+                <label><input type="radio" name="test5_q10" value="a"> горизонтальная часть таблицы</label>
+                <label><input type="radio" name="test5_q10" value="b"> вертикальная часть таблицы</label>
+                <label><input type="radio" name="test5_q10" value="c"> ссылка</label>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="button" class="btn btn-primary" onclick="checkTest5()">Проверить результат</button>
+                <button type="reset" class="btn btn-secondary" onclick="resetTest('result5')">Сбросить</button>
+              </div>
+            </form>
+            <div id="result5" class="result-box" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Тест 6 -->
+        <div class="test-card">
+          <h3>Тест 6. Формы и ввод данных</h3>
+          <p>Формы, поля ввода и кнопки.</p>
+          <button type="button" class="btn btn-primary toggle-btn" onclick="toggleTest('test6', this)">Открыть тест</button>
+
+          <div id="test6" class="test-content">
+            <form>
+              <div class="question">
+                <h4>1. Какой тег создаёт форму?</h4>
+                <label><input type="radio" name="test6_q1" value="a"> &lt;form&gt;</label>
+                <label><input type="radio" name="test6_q1" value="b"> &lt;inputform&gt;</label>
+                <label><input type="radio" name="test6_q1" value="c"> &lt;buttonbox&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>2. Какой тег создаёт поле ввода?</h4>
+                <label><input type="radio" name="test6_q2" value="a"> &lt;input&gt;</label>
+                <label><input type="radio" name="test6_q2" value="b"> &lt;field&gt;</label>
+                <label><input type="radio" name="test6_q2" value="c"> &lt;enter&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>3. Какой type используется для обычного текста?</h4>
+                <label><input type="radio" name="test6_q3" value="a"> text</label>
+                <label><input type="radio" name="test6_q3" value="b"> image</label>
+                <label><input type="radio" name="test6_q3" value="c"> music</label>
+              </div>
+
+              <div class="question">
+                <h4>4. Какой type используется для пароля?</h4>
+                <label><input type="radio" name="test6_q4" value="a"> pass</label>
+                <label><input type="radio" name="test6_q4" value="b"> password</label>
+                <label><input type="radio" name="test6_q4" value="c"> secretx</label>
+              </div>
+
+              <div class="question">
+                <h4>5. Какой type используется для электронной почты?</h4>
+                <label><input type="radio" name="test6_q5" value="a"> email</label>
+                <label><input type="radio" name="test6_q5" value="b"> mailto</label>
+                <label><input type="radio" name="test6_q5" value="c"> letter</label>
+              </div>
+
+              <div class="question">
+                <h4>6. Какой тег создаёт кнопку?</h4>
+                <label><input type="radio" name="test6_q6" value="a"> &lt;button&gt;</label>
+                <label><input type="radio" name="test6_q6" value="b"> &lt;btn&gt;</label>
+                <label><input type="radio" name="test6_q6" value="c"> &lt;click&gt;</label>
+              </div>
+
+              <div class="question">
+                <h4>7. Что делает type="submit"?</h4>
+                <label><input type="radio" name="test6_q7" value="a"> отправляет форму</label>
+                <label><input type="radio" name="test6_q7" value="b"> удаляет сайт</label>
+                <label><input type="radio" name="test6_q7" value="c"> меняет браузер</label>
+              </div>
+
+              <div class="question">
+                <h4>8. Что делает placeholder?</h4>
+                <label><input type="radio" name="test6_q8" value="a"> показывает подсказку в поле</label>
+                <label><input type="radio" name="test6_q8" value="b"> вставляет видео</label>
+                <label><input type="radio" name="test6_q8" value="c"> включает музыку</label>
+              </div>
+
+              <div class="question">
+                <h4>9. Какой атрибут делает поле обязательным?</h4>
+                <label><input type="radio" name="test6_q9" value="a"> required</label>
+                <label><input type="radio" name="test6_q9" value="b"> must</label>
+                <label><input type="radio" name="test6_q9" value="c"> fixed</label>
+              </div>
+
+              <div class="question">
+                <h4>10. Для чего нужны формы?</h4>
+                <label><input type="radio" name="test6_q10" value="a"> для ввода и отправки данных</label>
+                <label><input type="radio" name="test6_q10" value="b"> только для картинок</label>
+                <label><input type="radio" name="test6_q10" value="c"> только для таблиц</label>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="button" class="btn btn-primary" onclick="checkTest6()">Проверить результат</button>
+                <button type="reset" class="btn btn-secondary" onclick="resetTest('result6')">Сбросить</button>
+              </div>
+            </form>
+            <div id="result6" class="result-box" style="display:none;"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  Электронный учебник 2026
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
